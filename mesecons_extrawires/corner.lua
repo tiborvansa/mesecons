@@ -5,6 +5,14 @@ local corner_selectionbox = {
 		fixed = { -16/32, -16/32, -16/32, 5/32, -12/32, 5/32 },
 }
 
+
+local corner_nodebox = {
+	type = "fixed",
+	fixed = {{ -16/32-0.001, -17/32, -3/32, 0, -13/32, 3/32 },
+		   { -3/32, -17/32, -16/32+0.001, 3/32, -13/32, 3/32}}
+}
+
+
 local corner_get_rules = function (node)
 	local rules =
 	{{x = 1,  y = 0,  z =  0},
